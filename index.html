@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial;
+    }
+
+    body{
+      background:#f4f4f4;
+      color:#333;
+    }
+
+    /* Navbar */
+
+    header{
+      background:#222;
+      padding:15px 0;
+    }
+
+    nav{
+      display:flex;
+      justify-content:space-around;
+      align-items:center;
+    }
+
+    .logo{
+      color:white;
+    }
+
+    nav ul{
+      display:flex;
+      list-style:none;
+    }
+
+    nav ul li{
+      margin:0 15px;
+    }
+
+    nav ul li a{
+      color:white;
+      text-decoration:none;
+    }
+
+    /* Home Section */
+
+    .home{
+      height:90vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background:linear-gradient(to right,#00c853,#64dd17);
+      color:white;
+      text-align:center;
+      padding:20px;
+    }
+
+    .profile-pic{
+      width:200px;
+      height:200px;
+      border-radius:50%;
+      object-fit:cover;
+      border:5px solid white;
+      margin-bottom:20px;
+    }
+
+    .home-content h1{
+      font-size:50px;
+    }
+
+    .home-content h3{
+      margin:15px 0;
+    }
+
+    .resume-btn button{
+      padding:12px 25px;
+      border:none;
+      background:pink;
+      color:black;
+      font-weight:bold;
+      border-radius:5px;
+      cursor:pointer;
+      margin-top:20px;
+    }
+
+    /* Sections */
+
+    section{
+      padding:60px 10%;
+      text-align:center;
+    }
+
+    h2{
+      margin-bottom:20px;
+      font-size:35px;
+    }
+
+    /* Skills */
+
+    .skill-box{
+      display:flex;
+      justify-content:center;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    .skill{
+      background:pink;
+      color:black;
+      padding:15px 30px;
+      border-radius:5px;
+    }
+
+    /* Projects */
+
+    .project-container{
+      display:flex;
+      gap:20px;
+      justify-content:center;
+      flex-wrap:wrap;
+    }
+
+    .project-card{
+      background:skyblue;
+      padding:20px;
+      width:250px;
+      border-radius:10px;
+      box-shadow:0 0 10px rgba(0,0,0,0.2);
+    }
+
+    /* Contact */
+
+    form{
+      display:flex;
+      flex-direction:column;
+      width:300px;
+      margin:auto;
+    }
+
+    form input,
+    form textarea{
+      margin:10px 0;
+      padding:12px;
+    }
+
+    form button{
+      padding:12px;
+      background:green;
+      color:white;
+      border:none;
+      cursor:pointer;
+    }
+
+    /* Footer */
+
+    footer{
+      background:#222;
+      color:white;
+      text-align:center;
+      padding:15px;
+    }
+
+    /* Responsive */
+
+    @media(max-width:768px){
+
+      nav{
+        flex-direction:column;
+      }
+
+      nav ul{
+        margin-top:10px;
+      }
+
+      .home-content h1{
+        font-size:35px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+
+  <header>
+
+    <nav>
+
+      <h2 class="logo">Portfolio</h2>
+
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+    </nav>
+
+  </header>
+
+  <!-- Home Section -->
+
+  <section id="home" class="home">
+
+    <div class="home-content">
+
+      <!-- Add Your Photo -->
+
+      <img src="profile.jpg" class="profile-pic">
+
+      <h1>Hello, I'm Pravallika</h1>
+
+      <h3>Web Development Intern</h3>
+
+      <p>
+        Passionate about web development and creating responsive websites.
+      </p>
+
+      <!-- Resume Button -->
+
+         <a href="resume.pdf" download class="resume-btn">
+        <button>Download Resume</button>
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- About -->
+
+  <section id="about">
+
+    <h2>About Me</h2>
+
+    <p>
+      I am a B.Tech CSE student interested in web development,
+      frontend designing, and programming.
+    </p>
+
+  </section>
+
+  <!-- Skills -->
+
+  <section id="skills">
+
+    <h2>My Skills</h2>
+
+    <div class="skill-box">
+
+      <div class="skill">HTML</div>
+
+      <div class="skill">CSS</div>
+
+      <div class="skill">JavaScript</div>
+
+      <div class="skill">React</div>
+
+    </div>
+
+  </section>
+
+  <!-- Projects -->
+
+  <section id="projects">
+
+    <h2>Projects</h2>
+
+    <div class="project-container">
+
+      <div class="project-card">
+        <h3>Calculator App</h3>
+        <p>Simple calculator using HTML CSS and JavaScript.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>To-Do App</h3>
+        <p>Task management application for daily activities.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Weather App</h3>
+        <p>Weather dashboard using API integration.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Contact -->
+
+  <section id="contact">
+
+    <h2>Contact Me</h2>
+
+    <form>
+
+      <input type="text" placeholder="Enter Your Name">
+
+      <input type="email" placeholder="Enter Your Email">
+
+      <textarea placeholder="Enter Message"></textarea>
+
+      <button type="submit">Send</button>
+
+    </form>
+
+  </section>
+
+  <!-- Footer -->
+
+  <footer>
+
+    <p>© 2026 Pravallika | All Rights Reserved</p>
+
+  </footer>
+
+</body>
+</html>
